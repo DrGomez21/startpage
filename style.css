@@ -17,6 +17,10 @@ header {
     padding: 16px;
 }
 
+h2 {
+    color: #a6d189;
+}
+
 img {
     margin-top: 24px;
     height: 120px;
@@ -31,12 +35,12 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 60em; /* Set a max-width to limit content width if needed */
+    max-width: 60em;
 }
 
 .search-box {
     text-align: left;
-    margin-top: 1em; /* Adjust as needed */
+    margin-top: 1em;
 }
 
 form {
