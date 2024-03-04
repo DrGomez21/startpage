@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~/startpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="./images/icon6.jpg" alt="Imagen sobre mi que me guste">
+
+    <header>
+        <h1>¡Hola otra vez, Diego!</h1>
+        <h2 id="date"></h2>
+    </header>
+    
+    <!--Cuadro de búsqueda-->
+    <form class="search-box" action="https://www.google.com/search" method="get">
+        <input id="search" type="text" name="q" placeholder="Buscar en Google..." autofocus required />
+        <button type="submit">Buscar</button>
+    </form>
+
+    <main class="content">
+        <section class="card-container">
+            <article class="card">
+                <h3>~/General</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    <li><a href="https://www.crunchyroll.com/es">Crunchyroll</a></li>
+                    <li><a href="https://futbollibre.futbol/tv8/">Fútbol</a></li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>~/Dev</h3>
+                <ul>
+                    <li><a href="https://github.com/DrGomez21">Github</a></li>
+                    <li><a href="https://www.figma.com/">Figma</a></li>
+                    <li><a href="https://chat.openai.com/">ChatGPT</a></li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>~/FPUNA</h3>
+                <ul>
+                    <li><a href="https://grado.pol.una.py/my/">Educa</a></li>
+                    <li><a href="https://mail.google.com/mail/u/1/#inbox">Gmail</a></li>
+                    <li><a href="https://drive.google.com/drive/u/1/my-drive">Drive</a></li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>~/Medios</h3>
+                <ul>
+                    <li><a href="https://www.abc.com.py/">ABC color</a></li>
+                    <li><a href="https://medium.com/">Medium</a></li>
+                    <li><a href="https://www.reddit.com/">Reddit</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

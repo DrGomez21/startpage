@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Font";
+  src: url("./font/CascadiaCode.ttf");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #dcc6a0; /* Regular7 - Subtext 1 */
+  background: #303446; /* Base */
+  font-family: Font;
+}
+
+header {
+    padding: 16px;
+}
+
+img {
+    margin-top: 24px;
+    height: 120px;
+    width: 120px;
+    max-width: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60em; /* Set a max-width to limit content width if needed */
+}
+
+.search-box {
+    text-align: left;
+    margin-top: 1em; /* Adjust as needed */
+}
+
+form {
+    display: inline-block;
+    padding: 2px;
+    margin: 2px;
+    position: relative;
+    width: 30rem;
+    background: var(--color-brand);
+    border-radius: 8px;
+    box-shadow: rgba(35, 38, 52, 0.35) 0px 5px 15px;
+}
+
+input, button {
+    height: var(--height);
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+    font-size: 1.5rem;
+    padding: 3px;
+}
+
+input[type="text"] {
+    outline: 0; 
+    width: 100%;
+    background: var(--color-light);
+    padding: 1 1.6rem;
+    border-radius: var(--rad);
+    appearance: none; 
+    transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+}
+
+button {
+    display: none; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--btn-width);
+    font-weight: bold;
+    background: var(--color-brand);
+    border-radius: 0 var(--rad) var(--rad) 0;
+}
+
+input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+  + button {
+    display: block;
+  }
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    padding: 32px;
+    gap: 16px;
+}
+
+.card {
+    background: #1d202b;
+    border-radius: 8px;
+    padding: 8px;
+    min-width: 150px;
+}
+
+h3 {
+    color: #cca86b;
+    margin-bottom: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+li {
+    line-height: 1.0em;
+    margin-left: 0;
+    padding: 4px;
+    color: #51576d;
+}
+
+a {
+    color: #b66d61;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a6d189;
+    font-style: italic;
+}
